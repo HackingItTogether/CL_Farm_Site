@@ -42,8 +42,9 @@
          cxone('guide','init'); 
          cxone('guide','setDesiredGuideHeight','50em');
          cxone('guide','setDesiredGuideWidth','30em');
-         cxone('chat','sendFirstMessageAutomatically', 'Please let me know what your question is.');
+         //cxone('chat','sendFirstMessageAutomatically', 'Please let me know what your question is.');
          cxone('chat','setCaseCustomField', 'phone', phone);
+         cxone('guide', 'setCustomCss', '[data-selector="TEXTAREA"] Thank you for contacting support. Please complete this form and click Begin.');
          //cxone('guide', 'setOffsetX', '2em');
          //cxone('guide', 'setOffsetY', '55em');
          cxone('guide', 'setButtonSize', '80px');
