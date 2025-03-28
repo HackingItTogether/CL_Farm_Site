@@ -50,8 +50,8 @@
          cxone('guide', 'setButtonSize', '80px');
          //cxone('guide', 'setCustomCss', '[data-selector="GUIDE_CHANNEL_ICON"] {be-button-size: "15em";}');
          Init();
- 
-            function pushUpdatePayload(d)
+
+            function pushUpdatePayload(d) {
             
             {
             
@@ -69,7 +69,7 @@
             
             cxone('chat', 'onPushUpdate', ['CaseStatusChanged'], pushUpdatePayload);
             
-            });
+         };
          </script>
    </head>
    <!-- body -->
