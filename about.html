@@ -49,27 +49,7 @@
          //cxone('guide', 'setOffsetY', '55em');
          cxone('guide', 'setButtonSize', '80px');
          //cxone('guide', 'setCustomCss', '[data-selector="GUIDE_CHANNEL_ICON"] {be-button-size: "15em";}');
-         Init();
-
-            function pushUpdatePayload(d) {
-            
-            {
-            
-            if (typeof(d) === 'undefined' || typeof(d.data) === 'undefined') return;
-            
-            const status = d.data?.case?.status;
-            
-            if (typeof(status) === 'undefined') return;
-            
-            console.log("status changed " + status); 
-            
-            if (status === 'closed') Init();
-            
-            }
-            
-            cxone('chat', 'onPushUpdate', ['CaseStatusChanged'], pushUpdatePayload);
-            
-         };
+         cxone('analytics','setVisitorVariable', 'load', 'true');
          </script>
    </head>
    <!-- body -->
