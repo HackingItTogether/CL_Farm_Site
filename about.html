@@ -44,12 +44,33 @@
          cxone('guide','setDesiredGuideWidth','30em');
          //cxone('chat','sendFirstMessageAutomatically', 'Please let me know what your question is.');
          cxone('chat','setCaseCustomField', 'phone', phone);
-         cxone('guide', 'setCustomCss', '[data-selector="TEXTAREA"] Thank you for contacting support. Please complete this form and click Begin.');
+         //cxone('guide', 'setCustomCss', '[data-selector="TEXTAREA"] Thank you for contacting support. Please complete this form and click Begin.');
          //cxone('guide', 'setOffsetX', '2em');
          //cxone('guide', 'setOffsetY', '55em');
          cxone('guide', 'setButtonSize', '80px');
          //cxone('guide', 'setCustomCss', '[data-selector="GUIDE_CHANNEL_ICON"] {be-button-size: "15em";}');
-         cxone('analytics','setVisitorVariable', 'load', 'true');
+         cxone('guide', 'init', '99c6c60c-adae-4815-bde7-711e82af3e23');
+                
+            cxone('guide', 'setCustomCss', '[data-selector="GUIDE_CHANNEL_BUTTON"] {display: none !important;}');
+            
+            
+            
+            function showGuideTemplate(){  
+                
+                
+                cxone('guide', 'setCustomCss', '[data-selector="GUIDE_CHANNEL_BUTTON"] {display: block !important;}');
+                cxone('guide', 'openMenu');
+                //cxone('guide','openEntrypoint','00d47fe5-0915-448f-9353-0e3fd2303003');
+            
+                //cxone('chat','setCustomerName', fullname);
+                //cxone('chat', 'setCustomerCustomField', 'student_id', studentId);
+                
+                //cxone('guide','setCustomFields', {customerName: {value:fullname, hidden: false}});
+                
+                
+                //cxone('guide','setCustomFields', {contactCustomFields:[{ident:'student_id', value: studentId, hidden:false}]});
+
+            };
          </script>
    </head>
    <!-- body -->
