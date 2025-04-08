@@ -39,7 +39,7 @@
          document.head.appendChild(e)
          })('cxone','https://web-modules-de-na1.niceincontact.com/loader/1/loader.js');
          cxone('init', '1018');
-         cxone('guide','init'); 
+         cxone('guide','init', {locale: 'nl'}); 
          cxone('guide','setDesiredGuideHeight','50em');
          cxone('guide','setDesiredGuideWidth','30em');
          //cxone('chat','sendFirstMessageAutomatically', 'Please let me know what your question is.');
@@ -49,28 +49,8 @@
          //cxone('guide', 'setOffsetY', '55em');
          cxone('guide', 'setButtonSize', '80px');
          //cxone('guide', 'setCustomCss', '[data-selector="GUIDE_CHANNEL_ICON"] {be-button-size: "15em";}');
-         cxone('guide', 'init', '99c6c60c-adae-4815-bde7-711e82af3e23');
                 
-            cxone('guide', 'setCustomCss', '[data-selector="GUIDE_CHANNEL_BUTTON"] {display: none !important;}');
-            
-            
-            
-            function showGuideTemplate(){  
-                
-                
-                cxone('guide', 'setCustomCss', '[data-selector="GUIDE_CHANNEL_BUTTON"] {display: block !important;}');
-                cxone('guide', 'openMenu');
-                //cxone('guide','openEntrypoint','00d47fe5-0915-448f-9353-0e3fd2303003');
-            
-                //cxone('chat','setCustomerName', fullname);
-                //cxone('chat', 'setCustomerCustomField', 'student_id', studentId);
-                
-                //cxone('guide','setCustomFields', {customerName: {value:fullname, hidden: false}});
-                
-                
-                //cxone('guide','setCustomFields', {contactCustomFields:[{ident:'student_id', value: studentId, hidden:false}]});
-
-            };
+            //cxone('guide', 'setCustomCss', '[data-selector="GUIDE_CHANNEL_BUTTON"] {display: none !important;}');
          </script>
    </head>
    <!-- body -->
